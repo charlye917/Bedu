@@ -98,7 +98,7 @@ class AuthActivity : AppCompatActivity(),FirebaseAuth.AuthStateListener {
         txtProveedor.text = proveedor
         when(proveedor){
             PASSWORD_FIREBASE->{
-                imgProveedor.setImageResource(R.drawable.ic_email)
+                imgProveedor.setImageResource(R.drawable.ic_emaill)
                 imgFotoPerfil.setImageResource(R.mipmap.ic_launcher_round)
             }
             PASSWORD_FACEBOOK->{
@@ -107,7 +107,7 @@ class AuthActivity : AppCompatActivity(),FirebaseAuth.AuthStateListener {
             }
             else->{
                 imgFotoPerfil.setImageResource(R.mipmap.ic_launcher_round)
-                imgProveedor.setImageResource(R.drawable.ic_block_helper)
+                imgProveedor.setImageResource(R.drawable.ic_block)
             }
         }
     }
