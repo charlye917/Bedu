@@ -36,3 +36,31 @@
 ## Clase 2-4
     - Notificaciones
     - Ejercicio cuadro magico
+    
+## Clase 2-5
+    - Ejercicios con RecyclerView
+    
+## Clase 2-6
+    - Ejercicios con Retrofit
+    
+## Clase 2-7
+    - Ejercicios con Arquitectura MVP
+## Clase 2-8
+    - Examen fucionando Arquitecutra MVP y RecyclerView
+    
+## Clase 3-8
+    - Proyecto con recyclerview y Arquitectura MVP
+    - Button navigation
+    
+## Clase 4-2    
+    - Inflar vista con Base Adapter y ListView
+    
+## Clase 4-3
+    - Llamada sincrona y asincrona
+    
+## Clase 5-2
+    - Ejemplo con REALM Data Base
+    
+## Clase 5-3
+    - Ejemplo autentification Firebase
+    
