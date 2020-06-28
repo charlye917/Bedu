@@ -1,5 +1,5 @@
 package com.example.animalesrecyclerview
 
 interface Animal {
-    fun llenarAnimales(categoria:String){}
+    fun llenarAnimales(categoria:String)
 }

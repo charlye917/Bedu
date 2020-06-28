@@ -1,3 +1,6 @@
 package com.example.animalesrecyclerview
 
-data class datosAnimal(var nombre:String,var imagen:Int){}
+data class datosAnimal(
+    val nombre:String,
+    val imagen:Int
+)

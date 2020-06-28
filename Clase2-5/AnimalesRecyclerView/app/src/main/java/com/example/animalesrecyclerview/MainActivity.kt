@@ -5,34 +5,40 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity: AppCompatActivity(){
+class MainActivity: AppCompatActivity(), Animal{
+
+    private val categorias = arrayOf("TERRESTRES","ACUATICOS","VOLADORES")
+    private val catergoriaImagen = arrayOf(R.drawable.terrestres,R.drawable.acuaticos,R.drawable.voladores)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         llenarCategoria()
     }
 
     fun llenarCategoria(){
-        var lista = ArrayList<datosAnimal>()
-        var categorias = arrayOf("TERRESTRES","ACUATICOS","VOLADORES")
-        var catergoriaImagen = arrayOf(R.drawable.terrestres,R.drawable.acuaticos,R.drawable.voladores)
-        for(i in 0..categorias.size-1){
-            lista.add(datosAnimal(categorias[i],catergoriaImagen[i]))
+        var listdatoAnimal = ArrayList<datosAnimal>()
+
+        for(i in categorias.indices)
+            listdatoAnimal.add(datosAnimal(categorias[i],catergoriaImagen[i]))
+
+        miRecycler.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = MiAdaptador(listdatoAnimal)
         }
-        var miManager = LinearLayoutManager(this)
-        miRecycler.layoutManager = miManager
-        miRecycler.adapter = MiAdaptador(lista)
     }
 
-    fun llenarAnimales(categoria:String){
+    override fun llenarAnimales(categoria:String){
         var lista = ArrayList<datosAnimal>()
 
-        for(i in 0..animales(categoria).size)
+        for(i in animales(categoria).indices)
             lista.add(datosAnimal(animales(categoria).get(i),imagenes(categoria).get(i)))
-        var miManager = LinearLayoutManager(this)
-        miRecycler2.layoutManager = miManager
-        miRecycler2.adapter = MiAdaptador(lista)
+
+        miRecycler2.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = MiAdaptador(lista)
+        }
     }
 
     fun animales(categoria:String):Array<String>{

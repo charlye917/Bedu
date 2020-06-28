@@ -11,8 +11,8 @@ import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.item_categoria.view.*
 
 class MiAdaptador(var lista: ArrayList<datosAnimal>):RecyclerView.Adapter<MiAdaptador.miViewHolder>(){
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MiAdaptador.miViewHolder{
+    
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): miViewHolder{
         var vista = LayoutInflater.from(parent.context).inflate(R.layout.item_categoria,parent,false)
         return miViewHolder(vista)
     }
@@ -21,7 +21,7 @@ class MiAdaptador(var lista: ArrayList<datosAnimal>):RecyclerView.Adapter<MiAdap
         return lista.size
     }
 
-    override fun onBindViewHolder(holder: MiAdaptador.miViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: miViewHolder, position: Int) {
         var item = lista.get(position)
         holder.enlazar(item)
     }
@@ -32,8 +32,8 @@ class MiAdaptador(var lista: ArrayList<datosAnimal>):RecyclerView.Adapter<MiAdap
             itemView.imagen.setImageResource(datos.imagen)
             itemView.imagen.setOnClickListener{
                 Toast.makeText(itemView.context,"${datos.nombre}, ${datos.imagen}",Toast.LENGTH_LONG).show()
-                val main = MainActivity()
-                main.llenarAnimales(datos.nombre)
+                val animal:Animal = MainActivity()
+                animal.llenarAnimales(datos.nombre)
             }
         }
     }

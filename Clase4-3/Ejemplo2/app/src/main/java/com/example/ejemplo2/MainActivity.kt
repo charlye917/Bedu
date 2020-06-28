@@ -70,10 +70,13 @@ class MainActivity : AppCompatActivity() {
         //si es sith, permitiremos que el interceptor modifique la url
         if(isSith){
             clientBuilder.addInterceptor(InterceptCharacter())
+
         }
 
         clientBuilder.build()
             .newCall(request)
             .enqueue(object : Callback
+
+
     }
 }

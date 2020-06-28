@@ -10,8 +10,7 @@ import android.widget.TextView
 
 class GameAdapter(private val context: Context, private val datos: ArrayList<GameModel>): BaseAdapter() {
 
-    private val inflater: LayoutInflater
-            = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+    private val inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
 
     //Infla una vista para un Item de la lista, aquí se describe cómo se va a desplegar la info
