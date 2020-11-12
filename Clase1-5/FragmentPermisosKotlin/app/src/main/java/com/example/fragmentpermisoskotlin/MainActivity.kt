@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         var fragmentTransaction = fragmentManager.beginTransaction()
         var tag = view.getTag().toString()
         if(permisos(tag)){
-            fragmentTransaction.replace(R.id.contenedor, fragment[tag]!!,"f1")
+            fragmentTransaction.replace(R.id.fragment, fragment[tag]!!,"f1")
             fragmentTransaction.addToBackStack("f1")
             fragmentTransaction.commit()
         }

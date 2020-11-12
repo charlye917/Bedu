@@ -2,8 +2,10 @@ package com.example.animalesrecyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_categoria.*
 
 class MainActivity: AppCompatActivity(), Animal{
 
@@ -25,20 +27,24 @@ class MainActivity: AppCompatActivity(), Animal{
 
         miRecycler.apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = MiAdaptador(listdatoAnimal)
+            adapter = MiAdaptador(listdatoAnimal, this@MainActivity)
         }
     }
 
-    override fun llenarAnimales(categoria:String){
+    override fun llenarAnimales(categoria:datosAnimal){
         var lista = ArrayList<datosAnimal>()
+        imagen2.visibility
 
-        for(i in animales(categoria).indices)
-            lista.add(datosAnimal(animales(categoria).get(i),imagenes(categoria).get(i)))
+        for(i in animales(categoria.nombre).indices)
+            lista.add(datosAnimal(animales(categoria.nombre).get(i),imagenes(categoria.nombre).get(i)))
 
         miRecycler2.apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = MiAdaptador(lista)
+            adapter = MiAdaptador(lista, this@MainActivity)
         }
+
+        Toast.makeText(this,"${categoria.nombre}, ${categoria.imagen}", Toast.LENGTH_LONG).show()
+
     }
 
     fun animales(categoria:String):Array<String>{
