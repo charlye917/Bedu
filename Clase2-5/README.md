@@ -1,4 +1,4 @@
-# Uso de RecyclerView, ScrollView y el uso CheckBox y RadioButtons
+# Uso de RecyclerView con Interfaces
 ### Ejemplo del uso de RecyclerView
 
 ```kotlin
