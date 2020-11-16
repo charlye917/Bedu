@@ -43,9 +43,9 @@ class MainActivity : AppCompatActivity() {
             ) {
                 if(response.isSuccessful){
                     for(comentario in response.body()!!){
-                       Log.i("TEST",comentario.name)
-                        Log.i("TEST",comentario.email)
-                        Log.i("TEST",comentario.body)
+                       Log.i("__TEST",comentario.name)
+                        Log.i("__TEST",comentario.email)
+                        Log.i("__TEST",comentario.body)
                     }
                 }
             }

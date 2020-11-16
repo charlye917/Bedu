@@ -1,6 +1,7 @@
 package com.example.retrowiki2
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.RadioButton
 import android.widget.Toast
@@ -45,11 +46,21 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onResponse(call: Call<Querys>, response: Response<Querys>) {
                     var dato = response.body()
+                    Log.d("__TAG", dato.toString())
                     if (dato != null) {
                         var encabezado = when(tag){
-                            "xbox" -> dato.query.pages.xbox.extract
-                            "wii" -> dato.query.pages.wii.extract
-                            "nintendo" -> dato.query.pages.nintendo.extract
+                            "xbox" -> {
+                                Log.d("__TAG", dato.query.pages.xbox.extract)
+                                dato.query.pages.xbox.extract
+                            }
+                            "wii" -> {
+                                Log.d("__TAG", dato.query.pages.wii.extract)
+                                dato.query.pages.wii.extract
+                            }
+                            "nintendo" -> {
+                                Log.d("__TAG",dato.query.pages.nintendo.extract)
+                                dato.query.pages.nintendo.extract
+                            }
                             else -> dato.query.pages.xbox.extract
                         }
                         miWebView.loadData(encabezado,"text/html","UFT-8")
