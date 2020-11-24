@@ -1,15 +1,17 @@
-package com.example.realm.servicios
+# Persistencia de datos con REALM
 
-import android.annotation.SuppressLint
-import android.app.Activity
-import android.os.Environment
-import com.example.realm.model.Usuario
-import io.realm.Realm
-import java.io.File
-import java.io.IOException
-import java.text.SimpleDateFormat
-import java.util.*
+### Es necesario poner la clase como open 
+```kotlin
+open class Usuario:RealmObject() {
+    @PrimaryKey
+    var id:Int = 0
+    var nombre:String = ""
+    var telefono:String = ""
+}
+```
 
+### CRUD
+```kotlin
 class ServiciosUsuario(val realm:Realm) {
     //Obtener usuarios
     fun obtenerUsuarios():List<Usuario>{
@@ -57,3 +59,21 @@ class ServiciosUsuario(val realm:Realm) {
         }
     }
 }
+```
+### Iniciar configuracion
+```kotlin
+Realm.init(this)
+
+val config:RealmConfiguration = RealmConfiguration.Builder()
+    .name(getString(R.string.db_name))
+    .deleteRealmIfMigrationNeeded()
+    .schemaVersion(1)
+    .build()
+
+Realm.setDefaultConfiguration(config)
+serviciosUsuario = ServiciosUsuario(Realm.getDefaultInstance())
+val obtenerUltimoId = serviciosUsuario.obtenerUltimoid()
+
+serviciosUsuario.crearUsuario(obtenerUltimoId, "Carlos", "123123123")
+```
+

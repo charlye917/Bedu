@@ -75,8 +75,15 @@ class MainActivity : AppCompatActivity() {
 
         clientBuilder.build()
             .newCall(request)
-            .enqueue(object : Callback
+            .enqueue(object : Callback{
+                override fun onFailure(call: Call, e: IOException) {
 
+                }
+
+                override fun onResponse(call: Call, response: Response) {
+                }
+
+            })
 
     }
 }
