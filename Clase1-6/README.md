@@ -39,8 +39,7 @@ var miManager = LinearLayoutManager(this)
 myRecycler.layoutManager = miManager
 myRecycler.adapter = miAdaptador(lista,this)
 ```
-
-![recyclerview](Imagenes/recycler.gif)
+<img src="Imagenes/recycler.gif" alt="drawing" width="500"/>
 ### Ejemplo de ScrollView
 
 ```kotlin
