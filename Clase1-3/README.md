@@ -54,14 +54,11 @@ sharedPreferences.edit().clear().commit()
 
 
 ## Imagenes del proyecto PruebaFrame
-<img src="imagenes/Frame1.png" alt="drawing" width="300"/>
-<img src="imagenes/Frame2.png" alt="drawing" width="300"/>
+<img src="imagenes/Frame1.png" alt="drawing" width="300"/>      <img src="imagenes/Frame2.png" alt="drawing" width="300"/>
 
 ## Imagenes del proyecto SharePreferences
-<img src="imagenes/share1.png" alt="drawing" width="300"/>
-<img src="imagenes/share2.png" alt="drawing" width="300"/>
-<img src="imagenes/share3.png" alt="drawing" width="300"/>
-<img src="imagenes/share4.png" alt="drawing" width="300"/>
+<img src="imagenes/share1.png" alt="drawing" width="300"/>      <img src="imagenes/share2.png" alt="drawing" width="300"/>
+<img src="imagenes/share3.png" alt="drawing" width="300"/>      <img src="imagenes/share4.png" alt="drawing" width="300"/>
 
 ## Ligas para mas información
 
