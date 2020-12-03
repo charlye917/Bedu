@@ -71,16 +71,12 @@ if(permisos(tag)){
 }
 ```
 ## Imagenes del proyecto Splash
-![splash1](imagenes/splash1.png)
-![splash2](imagenes/splash2.png)
-![splash3](imagenes/splash3.png)
-![splash4](imagenes/splash4.png)
+<img src="imagenes/splash1.png" alt="drawing" width="200"/> <img src="imagenes/splash2.png" alt="drawing" width="200"/>
+<img src="imagenes/splash3.png" alt="drawing" width="200"/> <img src="imagenes/splash4.png" alt="drawing" width="200"/>
 
 ## Imagenes del proyecto FragmentPermisos
-![frag1](imagenes/frag1.png)
-![frag2](imagenes/frag2.png)
-![frag3](imagenes/frag3.png)
-![frag4](imagenes/frag4.png)
+<img src="imagenes/frag1.png" alt="drawing" width="200"/> <img src="imagenes/frag2.png" alt="drawing" width="200"/> 
+<img src="imagenes/frag3.png" alt="drawing" width="200"/> <img src="imagenes/frag4.png" alt="drawing" width="200"/>
 
 ## Ciclo de vida de un activity
 ![activity](imagenes/activity)
