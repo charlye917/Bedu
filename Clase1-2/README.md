@@ -30,13 +30,11 @@ var txtNum2.text = "Mostrar este texto"
 ```
 
 ## Imagenes del proyecto IntercambioColores
-<img src="imagenes/cambia_colores3.png" alt="drawing" width="300"/>
-<img src="imagenes/cambia_colores4.png" alt="drawing" width="300"/>
-<img src="imagenes/cambia_colores1.png" alt="drawing" width="300"/>
-<img src="imagenes/cambia_colores2.png" alt="drawing" width="300"/>
+<img src="imagenes/cambia_colores3.png" alt="drawing" width="300"/> <img src="imagenes/cambia_colores4.png" alt="drawing" width="300"/>
+<img src="imagenes/cambia_colores1.png" alt="drawing" width="300"/> <img src="imagenes/cambia_colores2.png" alt="drawing" width="300"/>
 
 ## Imagenes del proyecto calculadora
-![calculadora](imagenes/calculadora.png)
+<img src="imagenes/calculadora.png" alt="drawing" width="300"/>
 
 ## Ligas importantes para mas informacion
 
