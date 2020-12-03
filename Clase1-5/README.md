@@ -72,7 +72,7 @@ if(permisos(tag)){
 ```
 ## Imagenes del proyecto Splash
 <img src="imagenes/splash1.png" alt="drawing" width="200"/> <img src="imagenes/splash2.png" alt="drawing" width="200"/>
-<img src="imagenes/splash3.png" alt="drawing" width="200"/> <img src="imagenes/splash4.png" alt="drawing" width="200"/>
+<img src="imagenes/splash3.png" alt="drawing" width="200"/>
 
 ## Imagenes del proyecto FragmentPermisos
 <img src="imagenes/frag1.png" alt="drawing" width="200"/> <img src="imagenes/frag2.png" alt="drawing" width="200"/> 
